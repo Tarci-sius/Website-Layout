@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.social {
+  background-color: hsl(256, 67%, 59%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.social h3 {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.social span {
+  color: hsl(39, 100%, 71%);
+  font-size: 2.5rem;
+}
+.social p {
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.social img {
+  width: 9rem;
+}
+
+.manage {
+  background-color: hsl(0, 7%, 97%);
+  border-radius: 10px;
+  border: 1px solid peru;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.manage h2 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1.5rem;
+}
+.manage img {
+  width: 18rem;
+  position: relative;
+  top: 1rem;
+}
+
+.maintain {
+  background-color: hsl(39, 100%, 71%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.maintain h2 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 1.5rem;
+}
+.maintain img {
+  width: 13rem;
+  margin-bottom: 0;
+}
+
+.schedule {
+  background-color: hsl(254, 88%, 90%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.schedule h2 {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 1.5rem;
+}
+.schedule p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+.schedule img {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  right: -2rem;
+}
+
+.grow {
+  background-color: hsl(256, 67%, 59%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.grow h2 {
+  color: rgb(250, 235, 215);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.grow img {
+  width: 15rem;
+  padding: 1.5rem;
+}
+
+.faster {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid peru;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faster h2 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-weight: 500;
+}
+.faster p {
+  color: rgb(0, 0, 0);
+  padding-bottom: 1.5rem;
+}
+.faster img {
+  width: 13rem;
+}
+
+.create {
+  background-color: hsl(31, 66%, 93%);
+  border-radius: 10px;
+  /* width: 13rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.create h2 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
+.create span {
+  color: rgb(113, 47, 175);
+}
+.create img {
+  width: 10rem;
+  margin-top: 0;
+}
+
+.write {
+  background-color: hsl(39, 100%, 71%);
+  border-radius: 10px;
+  /* width: 13rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.write h2 {
+  color: rgb(0, 0, 0);
+  margin: 1.5rem;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1;
+}
+.write img {
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.bento-grid {
+  min-height: 100vh;
+  margin: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-areas:
+    " create social social schedule "
+    " create manage maintain schedule "
+    " write manage maintain schedule "
+    " write faster grow grow ";
+}
+
+.create {
+  grid-area: create;
+}
+
+.social {
+  grid-area: social;
+}
+
+.faster {
+  grid-area: faster;
+}
+
+.grow {
+  grid-area: grow;
+}
+
+.maintain {
+  grid-area: maintain;
+}
+
+.manage {
+  grid-area: manage;
+}
+
+.schedule {
+  grid-area: schedule;
+}
+
+.write {
+  grid-area: write;
+}
+@media (max-width: 767.98px) {
+  .bento-grid {
+    margin: 1.5rem 0;
+    grid-template-columns: 5em 1fr 5em;
+    grid-template-areas:
+      ". social ."
+      ". manage ."
+      ". maintain ."
+      ". schedule ."
+      ". grow ."
+      ". faster ."
+      ". create ."
+      ". write .";
+  }
+}
